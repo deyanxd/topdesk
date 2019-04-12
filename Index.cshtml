@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model topdesk.ViewModels.IndexAllComputersViewModel
+
+<div class="text-center">
+    <h1 class="display-4">TopDesk</h1>
+    <p>Find your Computer.</p>
+</div>
+<div class="row justify-content-between">
+    @foreach (var computer in Model.Computers)
+    {
+    <div class="col-md">
+        <p><b>@computer.Name</b></p>
+        <p><i>@computer.Description</i></p>
+        <p>@computer.PowerSupply</p>
+        <p>@computer.MotherBoard</p>
+        <p>@computer.CPU</p>
+        <p>@computer.RAM</p>
+        <p>@computer.HardDisk</p>
+        <p>@computer.VideoCard</p>
+    </div>
+    }
+</div>
+
+
+

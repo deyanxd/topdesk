@@ -1,0 +1,70 @@
+﻿@model topdesk.ViewModels.CreateComputerViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CreateComputerViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PowerSupply" class="control-label"></label>
+                <input asp-for="PowerSupply" class="form-control" />
+                <span asp-validation-for="PowerSupply" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Motherboard" class="control-label"></label>
+                <input asp-for="Motherboard" class="form-control" />
+                <span asp-validation-for="Motherboard" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPU" class="control-label"></label>
+                <input asp-for="CPU" class="form-control" />
+                <span asp-validation-for="CPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM" class="control-label"></label>
+                <input asp-for="RAM" class="form-control" />
+                <span asp-validation-for="RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HardDisk" class="control-label"></label>
+                <input asp-for="HardDisk" class="form-control" />
+                <span asp-validation-for="HardDisk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoCard" class="control-label"></label>
+                <input asp-for="VideoCard" class="form-control" />
+                <span asp-validation-for="VideoCard" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
